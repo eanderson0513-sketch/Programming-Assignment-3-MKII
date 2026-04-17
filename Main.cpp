@@ -112,9 +112,6 @@ void printPath(pair<int,int> exitcell,
         cout << "(" << path[i].first << ", " << path[i].second << ")\n";
     }
 }
-
-
-
 // ----------------------------------------------------------
 // STUDENTS IMPLEMENT DFS HERE
 // Add arguments, return type, and logic
@@ -127,6 +124,10 @@ void printPath(pair<int,int> exitcell,
 // ----------------------------------------------------------
 // MAIN PROGRAM (students add DFS calls and logic)
 // ----------------------------------------------------------
+
+    bool search(const vector<vector<int>>& maze) {
+
+}
 int main() {
     int N, M;
 
@@ -167,6 +168,7 @@ int main() {
     // STUDENT WORK:
     // If found, print the path
     // ------------------------------------------------------
+    bool found = false;
     if (found) {
         printPath(exitcell, parent_r, parent_c, ent_r, ent_c);
     } else {
