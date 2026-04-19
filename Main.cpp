@@ -125,9 +125,9 @@ void printPath(pair<int,int> exitcell,
 // MAIN PROGRAM (students add DFS calls and logic)
 // ----------------------------------------------------------
 
-    bool search(const vector<vector<int>>& maze) {
+    bool dfs(int ent_r, int ent_c, const vector<vector<int>>& maze, const vector<vector<bool>>& visited, const vector<vector<int>>&parent_r, const vector<vector<int>>&parent_c, int exit_r, int exit_c){
 
-}
+    }
 int main() {
     int N, M;
 
@@ -168,8 +168,7 @@ int main() {
     // STUDENT WORK:
     // If found, print the path
     // ------------------------------------------------------
-    bool found = false;
-    if (found) {
+    if (dfs(ent_r, ent_c, maze, visited, parent_r, parent_c, exit_r, exit_c)) {
         printPath(exitcell, parent_r, parent_c, ent_r, ent_c);
     } else {
          cout << "\nNo path exists.\n";
