@@ -3,3 +3,4 @@ Apr 16: Started the return result
 Apr 17: Started on the search maze function
 Apr 19: Reformatted the intake for the search function
 Apr 20: Started down he recursive search method
+Apr 21: Changed the search method from accepting a const 2d array of visited values to a regular one and fixed the typo where it was updated
