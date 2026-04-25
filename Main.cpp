@@ -133,11 +133,8 @@ void printPath(pair<int,int> exitcell,
         if (ent_r == exit_r && ent_c == exit_c) {
             return true;
         }
-        if (maze[ent_r][ent_c] == 1) {
-            return false;
-        }
         if (maze[ent_r][ent_c] == 0) {
-
+            
         }
     }
 int main() {
