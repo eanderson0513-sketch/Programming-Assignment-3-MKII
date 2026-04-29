@@ -139,16 +139,16 @@ void printPath(pair<int,int> exitcell,
             return true;
         }
         if (maze[ent_r][ent_c] == 0) {
-            if (dfs(ent_r + 1, ent_c, maze, visited, parent_r, parent_c, exit_r, exit_c)) {
+            if (dfs(dr[0], dc[0], maze, visited, parent_r, parent_c, exit_r, exit_c)) {
                 return true;
             }
-            if (dfs(ent_r - 1, ent_c, maze, visited, parent_r, parent_c, exit_r, exit_c)) {
+            if (dfs(dr[1], dc[1], maze, visited, parent_r, parent_c, exit_r, exit_c)) {
                 return true;
             }
-            if (dfs(ent_r, ent_c + 1, maze, visited, parent_r, parent_c, exit_r, exit_c)) {
+            if (dfs(dr[2], dc[2], maze, visited, parent_r, parent_c, exit_r, exit_c)) {
                 return true;
             }
-            if (dfs(ent_r, ent_c - 1, maze, visited, parent_r, parent_c, exit_r, exit_c)) {
+            if (dfs(dr[3], dc[3], maze, visited, parent_r, parent_c, exit_r, exit_c)) {
                 return true;
             }
         }

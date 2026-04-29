@@ -6,3 +6,4 @@ Apr 20: Started down he recursive search method
 Apr 21: Changed the search method from accepting a const 2d array of visited values to a regular one and fixed the typo where it was updated
 Apr 24: Removed a bit of redundant code
 Apr 28: Added a way of keeping track of the path
+Apr 29: Used the provided arrays for searching
