@@ -129,13 +129,13 @@ void printPath(pair<int,int> exitcell,
         if (visited[ent_r][ent_c] == true) {
             return false;
         }
-        visited[ent_r][ent_c] = true;
-        parent_r[ent_r][ent_c] = ent_r;
-        parent_c[ent_r][ent_c] = ent_c;
         if (maze[ent_r][ent_c] == 1) {
             return false;
         }
         if (ent_r == exit_r && ent_c == exit_c) {
+            visited[ent_r][ent_c] = true;
+            parent_r[ent_r][ent_c] = ent_r;
+            parent_c[ent_r][ent_c] = ent_c;
             return true;
         }
         if (maze[ent_r][ent_c] == 0) {
